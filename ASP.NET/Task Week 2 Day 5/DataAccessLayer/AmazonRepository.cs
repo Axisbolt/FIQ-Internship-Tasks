@@ -362,8 +362,6 @@ namespace DataAccessLayer
             Cost = x.Sum(y => y.Cost)
             }).ToListAsync();
 
-            List<Orderd> domainModels = new List<Orderd>();
-
             return sumgrp;
 
             }

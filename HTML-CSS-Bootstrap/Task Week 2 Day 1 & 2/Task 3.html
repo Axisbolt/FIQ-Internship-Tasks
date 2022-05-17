@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <div>
+    <h2>Task 3</h2>
+      <label for="x">Enter value for x:</label><br>
+      <input type="number" id="x" name="xname" value=""><br>
+      <label for="yValue">Enter value for y:</label><br>
+      <input type="number" id="y" name="yname" value=""><br><br>
+      <input type="button" value="Multiply" onclick="mul()">
+      <br>
+  </div>
+  <script>
+    function mul() {
+      var x = Number(document.getElementById("x").value);
+      var y = Number(document.getElementById("y").value);
+      alert('Multiplication is : ' + (x*y));
+    }
+  </script>
+</body>
+
+</html>

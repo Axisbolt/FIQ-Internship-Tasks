@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <div>
+    <h2>QuerySelectorAll reading DOM</h2>
+
+    <input type="text" id="xid" name="xname" class="Class Class1" value=""><br>
+    <input type="text" id="xid" name="yname" class="Class Class2" value=""><br>
+
+    <button type="button" onclick="Func1()">Click to Add</button>
+  </div>
+  <script>
+    function Func1() {
+        
+      console.log('To read by id', document.querySelectorAll("#xid"));
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <div>
+    <h2>Document Object Model</h2>
+
+    <input type="text" id="x" name="EnterValue" class="xValue" value=""><br>
+    <input type="text" id="y" name="EnterValue" class="yValue" value=""><br>
+
+    <button type="button" onclick="Func1()">Click to Add</button>
+  </div>
+  <script>
+    function Func1() {
+      var e = document.getElementsByName("EnterValue");
+      console.log('Log html list', e);
+      console.log('Log html inner value 1', e[0].value);
+      console.log('Log html inner value 2', e[1].value);
+    }
+  </script>
+</body>
+
+</html>

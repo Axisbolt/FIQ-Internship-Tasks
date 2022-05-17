@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <div>
+    <h2>QuerySelectorAll reading DOM</h2>
+
+    <div id="someIdInputA" class="ClassInputA">
+          <input type="text" id="id1" name="name1" class="ClassInput1" value=""><br>
+          <input type="text" id="id2" name="name2" class="ClassInput2" value=""><br>
+        </div>
+        <div id="someIdInputB" class="ClassInputB">
+            <input type="text" id="id1" name="name1" class="ClassInput1" value=""><br>
+            <input type="text" id="id2" name="name2" class="ClassInput2" value=""><br>
+          </div>
+    
+        <button type="button" onclick="Func1()">Click to Add</button>
+      </div>
+      <script>
+        function Func1() {
+    
+          var e = document.querySelectorAll(".ClassInputB .ClassInput1");
+          console.log('elementsNested by matching condition by class name', e);
+    
+          e.forEach((x, index) => {
+            console.log('elementsNested condition Log html inner value: ', x.value);
+          });
+        }
+      </script>
+    
+</body>
+
+</html>

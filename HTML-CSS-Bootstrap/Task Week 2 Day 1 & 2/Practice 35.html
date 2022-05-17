@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <div>
+    <h2>Print Page</h2>
+    <p id="demo">Hello My Name is Kapil Chouhan</p>
+    <button type="button" onclick="myFunction()">Change Para Text</button>
+    <button onclick="myPrint()">Print this page</button>
+  </div>
+  <script>
+    function myFunction() {
+      document.getElementById("demo").innerText = "Hello JavaScript!"
+    }
+
+    function myPrint() {
+      window.print();
+    }
+  </script>
+</body>
+
+</html>

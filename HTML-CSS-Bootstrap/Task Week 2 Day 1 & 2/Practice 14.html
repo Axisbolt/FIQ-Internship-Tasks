@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <div>
+    <h2>HTML Forms</h2>
+    <form>
+      <label for="xValue">Enter value for x:</label><br>
+      <input type="number" id="xValue" name="xValue" value=""><br>
+
+      <label for="yValue">Enter value for y:</label><br>
+      <input type="number" id="yValue" name="yValue" value=""><br><br>
+
+      <input type="button" value="Click to Add" onclick="add()">
+
+      <br>
+      <label>Sum of x & y: </label>
+      <label id="sumValue">0</label>
+    </form>
+  </div>
+  <script>
+    function add() {
+      var x = Number(document.getElementById("xValue").value);
+      var y = Number(document.getElementById("yValue").value);
+      var sum = sumn(x , y);
+      document.getElementById("sumValue").innerHTML = sum.toString();
+    }
+
+    function sumn(x, y) {
+      return x + y;
+    }
+  </script>
+</body>
+
+</html>

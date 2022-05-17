@@ -1,0 +1,33 @@
+    <!DOCTYPE html>
+    <html>
+    <body>
+      <div>
+        <h2>Arrays</h2>
+        <input type="button" value="Click Me" onclick="FindIndex()">
+      </div>
+      <script>
+    function FindIndex() {
+        var data = [
+          {
+            id: 1,
+            name: "Kapil",
+            age: 22
+          },
+          {
+            id: 2,
+            name: "Ankush",
+            age: 21
+          },
+          {
+            id: 3,
+            name: "Vanshita",
+            age: 20
+          }
+        ];
+        console.log('Actual data', data);
+      var a = data.findIndex(x => x.name === 'Ankush'); 
+      console.log('User index: ', a);
+    }
+      </script>
+    </body>
+    </html>

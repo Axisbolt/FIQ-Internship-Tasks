@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <div>
+    <h2>Task 5</h2>
+    <input type="number" id="x" name="xname" value=""><br><br>
+    <input type="button" value="Click Me" onclick="Filter()">
+  </div>
+  <script>
+function Filter() {
+    var num = [98,65,12,102];
+    var x = Number(document.getElementById("x").value);
+    var filterednum = num.some(y => y === x); 
+    console.log('Number Exist: ', filterednum);
+}
+  </script>
+</body>
+</html>

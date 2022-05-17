@@ -1,0 +1,19 @@
+
+  <!DOCTYPE html>
+  <html>
+  <body>
+    <div>
+      <h2>Arrays</h2>
+      <input type="button" value="Click Me" onclick="Filter()">
+    </div>
+    <script>
+function Filter() {
+      var num = [98,65,12,102];
+      var filterednum = num.filter(x => x < 98); 
+      console.log('Filtered data', filterednum);
+      alert('The number with less than 98 in : ' + num +' are '+ filterednum);
+}
+    </script>
+  </body>
+  </html>
+  

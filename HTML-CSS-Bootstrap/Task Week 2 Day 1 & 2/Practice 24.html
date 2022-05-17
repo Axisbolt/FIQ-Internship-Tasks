@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <div>
+    <h2>Arrays</h2>
+    <input type="button" value="Click Me" onclick="Func_loop()">
+  </div>
+  <script>
+  function Func_loop() {
+      var data = [
+        {
+          id: 1,
+          name: "Kapil"
+        },
+        {
+          id: 2,
+          name: "Amar"
+        }
+      ];
+
+      console.log('data available are: ', data);
+      for (i = 0; i < data.length; i++) {
+        console.log('each element is: ', data[i].name);
+      }
+    }
+
+  </script>
+</body>
+</html>

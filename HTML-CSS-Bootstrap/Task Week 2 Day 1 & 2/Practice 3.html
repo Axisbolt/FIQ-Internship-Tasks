@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <div>
+    <h2>Document Object Model</h2>
+    <label for="x" id="name">Enter value for FirstName:</label><br>
+    <input type="text" id="x" name="x" value=""><br>
+
+    <button type="button" onclick="Func1()">Click to Add</button>
+  </div>
+  <script>
+    function Func1() {
+      var e = document.getElementById("x");
+      console.log('Log html by id', e);
+      console.log('Log html inner value by id', e.value);
+    }
+  </script>
+</body>
+
+</html>

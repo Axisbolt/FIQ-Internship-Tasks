@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <div>
+    <h2>Increment Number</h2>
+    <p id="a">0</p>
+    <button type="button" onclick="Func1()">Click to Add</button>
+  </div>
+  <script>
+    function Func1() {
+      var i =  Number(document.getElementById("a").innerText) + 1;
+      document.getElementById("a").innerText  = i.toString();
+    }
+  </script>
+</body>
+</html>

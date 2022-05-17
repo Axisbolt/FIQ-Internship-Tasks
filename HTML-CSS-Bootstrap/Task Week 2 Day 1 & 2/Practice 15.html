@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <div>
+    <h2>Concatenate String</h2>
+    <form>
+      <label for="x">Enter value for FirstName:</label><br>
+      <input type="text" id="x" name="x" value=""><br>
+
+      <label for="y">Enter value for LastName:</label><br>
+      <input type="text" id="y" name="y" value=""><br>
+      
+      <label for="z">Enter Date of Birth:</label><br>
+      <input type="date" id="z" name="z" value=""><br><br>
+
+      <input type="button" value="Click to Add" onclick="Func1()">
+
+      <br>
+      <label>Your Full name: </label>
+      <label id="fullName"></label>
+      <br>
+      <label>Your Date of birth is: </label>
+      <label id="dob"></label>
+    </form>
+  </div>
+  <script>
+    function Func1() {
+      var x = document.getElementById("x").value;
+      var y = document.getElementById("y").value;
+      document.getElementById("fullName").innerHTML = (x + " " + y);
+      document.getElementById("dob").innerHTML = document.getElementById("z").value;
+    }
+  </script>
+</body>
+</html>

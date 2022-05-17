@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <div>
+    <h2>Sum of 2 Numbers</h2>
+    <form>
+      <label for="x">Enter value for x:</label><br>
+      <input type="number" id="x" name="xname" value=""><br>
+
+      <label for="yValue">Enter value for y:</label><br>
+      <input type="number" id="y" name="yname" value=""><br><br>
+
+      <input type="button" value="Click to Add" onclick="add()">
+
+      <br>
+      <label>Sum of x & y: </label>
+      <label id="sumValue">0</label>
+    </form>
+  </div>
+  <script>
+    function add() {
+      var x = Number(document.getElementById("x").value);
+      var y = Number(document.getElementById("y").value);
+      document.getElementById("sumValue").innerHTML = (x + y).toString();
+    }
+  </script>
+</body>
+
+</html>

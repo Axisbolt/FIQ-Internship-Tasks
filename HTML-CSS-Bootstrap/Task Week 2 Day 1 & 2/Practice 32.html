@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <div>
+    <h2>Closures</h2>
+    <p id="demo">0</p>
+    <button type="button" onclick="myFunction()">Click to Add</button>
+  </div>
+  <script>
+    function myFunction() {
+      var counter = Number(document.getElementById('demo').innerText);
+      function plus() { counter += 1; }
+      plus();
+      console.log('Counter value is: ' + counter);
+      document.getElementById('demo').innerText = counter;
+    }
+  </script>
+</body>
+</html>

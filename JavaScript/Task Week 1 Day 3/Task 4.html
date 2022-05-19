@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <div>
+    <h2>Task 4</h2>
+    <input type="button" value="Click Me" onclick=Func1()>
+  </div>
+  <script>
+  function Func1() {
+      var fruits = ['apple', 'banana', 'papaya','papaya'];
+      console.log('Fruits available are: ', fruits);      
+      const unique = [...new Set(fruits)];
+      console.log('Values after removing duplicate', unique);
+    }
+  </script>
+</body>
+</html>
